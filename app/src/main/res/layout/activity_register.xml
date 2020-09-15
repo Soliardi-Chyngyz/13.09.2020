@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:singleLine="true"
+            android:hint="Enter last name"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"/>
+
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etLastName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:hint="Enter your name"/>
+
+        <EditText
+            android:id="@+id/etPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:ems="20"
+            android:layout_below="@+id/etUserName"
+            android:hint="Enter password"
+            android:singleLine="true"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:id="@+id/etPass_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etPass"
+            android:ems="10"
+            android:hint="Re-Enter password"
+            android:layout_below="@+id/etPass"
+            android:singleLine="true"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etPass_confirm"
+            android:layout_below="@+id/etPass_confirm"
+            android:hint="Enter email"
+            android:inputType="textEmailAddress"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etEmail"
+            android:text="Register"
+            android:background="#000000"
+            android:textColor="#fff"
+            android:layout_below="@id/etEmail"/>
+
+
+    </RelativeLayout>
+</ScrollView>
